@@ -319,7 +319,7 @@ html {
 
 .play-controller {
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 @-webkit-keyframes waves {

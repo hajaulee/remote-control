@@ -11,109 +11,101 @@
       <script nomodule='' src='https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js'></script>
     </head>
     <body>
-        <div class="container">
-            <div class="components">
-              <div class="form">
-                <input id="url" type="text" class="form__input" placeholder="Url" />
-                <div id="go" class="form__icon">
-                  <ion-icon name="return-down-back-outline"></ion-icon>
-                </div>
-              </div>
-          
-              <div class="icon">
-                <div id="back" class="icon__back">
-                  <ion-icon name="return-up-back-outline"></ion-icon>
-                </div>
-                <div id="mute" class="icon__mute">
-                  <ion-icon name="volume-mute-outline"></ion-icon>
-                </div>
-              </div>
-          
-              <div class="circle-controller-container">
-                <div class="circle-controller">
-          
-                  <div class="center">
-                    <div class="icon">
-                      <div id="enter" class="icon__common">
-                        <ion-icon name="return-down-back-outline"></ion-icon>
-                      </div>
-                    </div>
-                  </div>
-          
-                  <div class="marker">
-                    <span class="marker__1"></span>
-                    <span class="marker__2"></span>
-                    <span class="marker__3"></span>
-                    <span class="marker__4"></span>
-                  </div>
-                  <div class="c-button">
-                    <div id="up" class="c-button__up">
-                      <ion-icon name="caret-up-outline"></ion-icon>
-                    </div>
-                    <div id="down" class="c-button__down">
-                      <ion-icon name="caret-down-outline"></ion-icon>
-                    </div>
-                    <div id="vol_low" class="c-button__left">
-                      <ion-icon name="volume-low-outline"></ion-icon>
-                    </div>
-                    <div id="vol_high" class="c-button__right">
-                      <ion-icon name="volume-high-outline"></ion-icon>
-                    </div>
+      <div class="container">
+        <div class="components">
+          <div class="form">
+            <input id="url" type="text" class="form__input" placeholder="Url" />
+            <div id="go" class="form__icon">
+              <ion-icon name="return-down-back-outline"></ion-icon>
+            </div>
+          </div>
+      
+          <div class="icon">
+            <div id="back" class="icon__back">
+              <ion-icon name="return-up-back-outline"></ion-icon>
+            </div>
+            <div id="mute" class="icon__mute">
+              <ion-icon name="volume-mute-outline"></ion-icon>
+            </div>
+          </div>
+      
+          <div class="circle-controller-container">
+            <div class="circle-controller">
+      
+              <div class="center">
+                <div class="icon">
+                  <div id="fullscreen" class="icon__common">
+                    <ion-icon name="expand-outline"></ion-icon>
                   </div>
                 </div>
               </div>
-          
-              <div class="icon play-controller">
-                <div id="play_skip_back" class="icon__common">
+      
+              <div class="marker">
+                <span class="marker__1"></span>
+                <span class="marker__2"></span>
+                <span class="marker__3"></span>
+                <span class="marker__4"></span>
+              </div>
+              <div class="c-button">
+                <div id="play_skip_back" class="c-button__up">
                   <ion-icon name="play-skip-back-outline"></ion-icon>
                 </div>
-                <div id="play_back" class="icon__common">
-                  <ion-icon name="play-back-outline"></ion-icon>
-                </div>
-          
-                <div class="circle">
-                  <span id="play_pause" class="circle__btn">
-                    <ion-icon class="pause" name="pause"></ion-icon>
-                    <ion-icon class="play" name="play"></ion-icon>
-                  </span>
-                  <span class="circle__back-1"></span>
-                  <span class="circle__back-2"></span>
-                </div>
-          
-                <div id="play_forward" class="icon__common">
-                  <ion-icon name="play-forward-outline"></ion-icon>
-                </div>
-                <div id="play_skip_forward" class="icon__common">
+                <div id="play_skip_forward" class="c-button__down">
                   <ion-icon name="play-skip-forward-outline"></ion-icon>
                 </div>
-              </div>
-          
-              <div id="s_code_form" class="form">
-                <select id="code" class="form__input" placeholder="Code">
-                  <option value="volvo">Volvo</option>
-                  <option value="cc">Honda</option>
-                </select>
-                <div id="add" class="form__icon">
-                  <ion-icon name="add-outline"></ion-icon>
+                <div id="vol_low" class="c-button__left">
+                  <ion-icon name="volume-low-outline"></ion-icon>
+                </div>
+                <div id="vol_high" class="c-button__right">
+                  <ion-icon name="volume-high-outline"></ion-icon>
                 </div>
               </div>
-          
-              <div id="i_name_form" class="form hide">
-                <input id="i_name" type="text" class="form__input" placeholder="Name" />
-                <div id="i_close" class="form__icon">
-                  <ion-icon name="close-outline"></ion-icon>
-                </div>
-              </div>
-              <div id="i_code_form" class="form hide">
-                <input id="i_code" type="text" class="form__input" placeholder="Code" />
-                <div id="i_add" class="form__icon">
-                  <ion-icon name="return-down-back-outline"></ion-icon>
-                </div>
-              </div>
-          
             </div>
-          
           </div>
+      
+          <div class="icon play-controller">
+            <div id="play_back" class="icon__common">
+              <ion-icon name="play-back-outline"></ion-icon>
+            </div>
+            <div class="circle">
+              <span id="play_pause" class="circle__btn">
+                <ion-icon class="pause" name="pause"></ion-icon>
+                <ion-icon class="play" name="play"></ion-icon>
+              </span>
+              <span class="circle__back-1"></span>
+              <span class="circle__back-2"></span>
+            </div>
+            <div id="play_forward" class="icon__common">
+              <ion-icon name="play-forward-outline"></ion-icon>
+            </div>
+          </div>
+      
+          <div id="s_code_form" class="form">
+            <select id="code" class="form__input" placeholder="Code">
+              <option value="volvo">Volvo</option>
+              <option value="cc">Honda</option>
+            </select>
+            <div id="add" class="form__icon">
+              <ion-icon name="add-outline"></ion-icon>
+            </div>
+          </div>
+      
+          <div id="i_name_form" class="form hide">
+            <input id="i_name" type="text" class="form__input" placeholder="Name" />
+            <div id="i_close" class="form__icon">
+              <ion-icon name="close-outline"></ion-icon>
+            </div>
+          </div>
+          <div id="i_code_form" class="form hide">
+            <input id="i_code" type="text" class="form__input" placeholder="Code" />
+            <div id="i_add" class="form__icon">
+              <ion-icon name="return-down-back-outline"></ion-icon>
+            </div>
+          </div>
+      
+        </div>
+      
+      </div>
     <script type="module">
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.2/firebase-app.js";
