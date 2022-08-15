@@ -65,7 +65,7 @@ const buttonIds = [
 
 
 function send(key){
-    navigator.vibrate(200);
+    navigator.vibrate?.(200);
     try{
     const code = document.getElementById("code").value;
     const db = window.database.getDatabase(window.firebaseApp);
