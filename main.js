@@ -72,7 +72,8 @@ function send(key){
     const ref = window.database.ref(db, `${APP_NAME}/${code}`);
     window.database.set(ref, {
         key: key,
-        data: document.getElementById("url").value
+        data: document.getElementById("url").value,
+        timestamp: new Date().getTime()
     });
     }catch(e){
     console.error(e);
