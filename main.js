@@ -69,7 +69,7 @@ function send(key){
     try{
     const code = document.getElementById("code").value;
     const db = window.database.getDatabase(window.firebaseApp);
-    const ref = window.database.ref(db, `${APP_NAME}/${code}`);
+    const ref = window.database.ref(db, `${APP_NAME}/${code}/signal`);
     window.database.set(ref, {
         key: key,
         data: document.getElementById("url").value,
