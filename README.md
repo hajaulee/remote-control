@@ -1,4 +1,4 @@
-# remote-control
+# [Remote controller](https://hajaulee.github.io/remote-control/)
 A simple remote controller for youtube,...
 
 ## Usage
