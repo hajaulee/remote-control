@@ -24,6 +24,7 @@ const wave2 = document.querySelector(".circle__back-2");
 
 /* add button */
 const add = document.getElementById("add");
+const remove = document.getElementById("remove");
 const iadd = document.getElementById("i_add");
 const iclose = document.getElementById("i_close");
 
@@ -35,7 +36,6 @@ function toggleForm() {
 
 add.addEventListener("click", () => toggleForm());
 iclose.addEventListener("click", () => toggleForm());
-
 iadd.addEventListener("click", () => {
   toggleForm();
   const code = {
@@ -46,6 +46,11 @@ iadd.addEventListener("click", () => {
   setCodes(codes);
 });
 
+remove.addEventListener("click", () => {
+  codes = codes.filter(code => code.code != document.getElementById("code").value);
+  setCodes(codes);
+});
+
 /*  buttons */
 const buttonIds = [
   "go",
@@ -53,7 +58,6 @@ const buttonIds = [
   "mute",
   "vol_low",
   "vol_high",
-  "fullscreen",
   "play_back",
   "play_pause",
   "play_forward",

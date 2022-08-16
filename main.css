@@ -274,6 +274,9 @@ html {
 .form__input:focus + .form__icon {
   color: var(--primary);
 }
+.form__input_prefix_icon {
+  padding-left: 4rem;
+}
 .form__icon {
   height: 4rem;
   position: absolute;
@@ -285,6 +288,10 @@ html {
   color: var(--greyDark);
   transition: 0.3s ease;
   cursor: pointer;
+}
+.form__icon_prefix {
+  right: auto;
+  left: 0;
 }
 .form__icon:hover {
   color: var(--primary);

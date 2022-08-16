@@ -314,6 +314,10 @@ html {
     }
   }
 
+  &__input_prefix_icon {
+    padding-left: 4rem;
+  }
+
   &__icon {
     height: 4rem;
     position: absolute;
@@ -325,6 +329,11 @@ html {
     color: var(--greyDark);
     transition: 0.3s ease;
     cursor: pointer;
+  }
+
+  &__icon_prefix {
+    right: auto;
+    left: 0;
   }
 
   &__icon:hover {
